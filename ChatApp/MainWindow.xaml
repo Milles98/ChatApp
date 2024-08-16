@@ -159,6 +159,34 @@
                       Margin="8 0 0 0"
                       Grid.Row="1"/>
             
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="90"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Grid.Column="0"
+                         Height="50"
+                         Text="Message @Username"
+                         Style="{StaticResource MessageBox}"
+                         Grid.ColumnSpan="2"/>
+                
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Grid.Column="1"
+                            Margin="0 0 16 0">
+                    <Image Source="Icons/plus.png"
+                           Width="20"
+                           Height="20"
+                           Margin="5 5 5 0"/>
+                    <Image Source="Icons/send.png"
+                           Width="20"
+                           Height="20"
+                           Margin="5 5 16 0"/>
+                </StackPanel>
+                
+            </Grid>
+            
         </Grid>
         
     </Grid>
