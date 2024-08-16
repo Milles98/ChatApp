@@ -10,8 +10,26 @@
 
     <ItemGroup>
       <Folder Include="Core\" />
-      <Folder Include="Icons\" />
       <Folder Include="MVVM\View\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Icons\camera.jpg" />
+      <Content Include="Icons\camera.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Icons\phone.jpg" />
+      <Content Include="Icons\phone.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Icons\plus.png" />
+      <Content Include="Icons\plus.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Icons\send.png" />
+      <Content Include="Icons\send.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
