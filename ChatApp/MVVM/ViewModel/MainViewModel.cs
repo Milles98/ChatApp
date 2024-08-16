@@ -8,6 +8,13 @@ public class MainViewModel : ObservableObject
 {
     public ObservableCollection<MessageModel> Messages { get; set; }
     public ObservableCollection<ContactModel> Contacts { get; set; }
+    
+    /*
+     * This a great simple styling tut for me.
+     * Using the MVVM Community Toolkit package from Microsoft eliminates the Core folder.
+     * It saves so much time inheriting the ObservableObject class and using the source
+     * generated attributes [ObservableProperty] and [RelayCommand].
+     */
 
     // Commands
     public RelayCommand SendCommand { get; set; }
