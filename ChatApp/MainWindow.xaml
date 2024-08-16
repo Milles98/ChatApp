@@ -152,12 +152,12 @@
                 </Grid>
             </Border>
             
-            <!-- <ListView ItemsSource="{Binding SelectedContact.Messages}" -->
-            <!--           Background="Transparent" -->
-            <!--           BorderBrush="0" -->
-            <!--           ItemContainerStyle="{StaticResource}" -->
-            <!--           Margin="8 0 0 0" -->
-            <!--           Grid.Row="1"/> -->
+            <ListView ItemsSource="{Binding SelectedContact.Messages}"
+                      Background="Transparent"
+                      BorderThickness="0"
+                      ItemContainerStyle="{StaticResource ChatItem}"
+                      Margin="8 0 0 0"
+                      Grid.Row="1"/>
             
         </Grid>
         
