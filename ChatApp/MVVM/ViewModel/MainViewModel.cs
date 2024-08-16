@@ -1,9 +1,10 @@
 ﻿using System.Collections.ObjectModel;
+using ChatApp.Core;
 using ChatApp.MVVM.Model;
 
 namespace ChatApp.MVVM.ViewModel;
 
-public class MainViewModel
+public class MainViewModel : ObservableObject
 {
     public ObservableCollection<MessageModel> Messages { get; set; }
     public ObservableCollection<ContactModel> Contacts { get; set; }
@@ -20,6 +21,7 @@ public class MainViewModel
         set
         {
             _message = value;
+            OnPropertyChanged();
         }
     }   
     
