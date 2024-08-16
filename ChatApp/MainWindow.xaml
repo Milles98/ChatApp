@@ -29,7 +29,8 @@
         </Grid.ColumnDefinitions>
         
         <Border Grid.ColumnSpan="2"
-                Background="#252525">
+                Background="#252525"
+                MouseDown="Border_MouseDown">
             
             <Grid HorizontalAlignment="Stretch">
                 <Label Content="EasyChat"
@@ -46,7 +47,8 @@
                             BorderThickness="0"
                             Foreground="Gray"
                             FontWeight="Bold"
-                            Margin="0 0 0 3"/>
+                            Margin="0 0 0 3"
+                            Click="ButtonMinimize_Click"/>
                     
                     <Button Width="20"
                             Height="20"
@@ -54,7 +56,8 @@
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
-                            FontWeight="Bold"/>
+                            FontWeight="Bold"
+                            Click="ButtonMaximize_Click"/>
                     
                     <Button Width="20"
                             Height="20"
@@ -62,7 +65,8 @@
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
-                            FontWeight="Bold"/>
+                            FontWeight="Bold"
+                            Click="ButtonExit_Click"/>
                 </StackPanel>
                 
             </Grid>
