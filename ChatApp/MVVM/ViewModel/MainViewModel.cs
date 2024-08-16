@@ -7,7 +7,22 @@ public class MainViewModel
 {
     public ObservableCollection<MessageModel> Messages { get; set; }
     public ObservableCollection<ContactModel> Contacts { get; set; }
+    
+    // Commands
+    
+    public ContactModel SelectedContact { get; set; }
 
+    private string _message;
+
+    public string Message
+    {
+        get => _message;
+        set
+        {
+            _message = value;
+        }
+    }   
+    
     public MainViewModel()
     {
         Messages = new ObservableCollection<MessageModel>();
