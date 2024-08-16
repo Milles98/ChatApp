@@ -12,7 +12,17 @@ public class MainViewModel : ObservableObject
     // Commands
     public RelayCommand SendCommand { get; set; }
 
-    public ContactModel SelectedContact { get; set; }
+    private ContactModel _selectedContact;
+
+    public ContactModel SelectedContact
+    {
+        get => _selectedContact;
+        set
+        {
+            _selectedContact = value;
+            OnPropertyChanged();
+        }
+    }
 
     private string _message;
 
